@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spd-app
+  namespace: ada-app-namespace
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spd-app
+  template:
+    metadata:
+      labels:
+        app: spd-app
+    spec:
+      containers:
+      - name: spd-app-container
+        image: schwendler/embarque-ti-spd-project
+        env:
+        - name: SPD_KEY_VAULT_URI
+          value: https://ada-spd-keyvault.vault.azure.net/
+        ports:
+        - containerPort: 8080
