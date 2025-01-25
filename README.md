@@ -1,10 +1,11 @@
-# Projeto Ada | Serviços Para Desenvolvedor (SPD):  Infrestrutura em Terraform
+# 💻 Projeto Ada | Serviços Para Desenvolvedor (SPD):
+# ☁️ Infrestrutura em Terraform
 
-## Pré-requisitos para o projeto:
+## 🗒️ Pré-requisitos para o projeto:
 1. Instalar o Terraform: https://developer.hashicorp.com/terraform/install
 2. Configurar o Azure CLI e autenticar com `az login`
 
-## Passos para Configurar a Infraestrutura
+## ⚙️ Passos para configurar a infraestrutura em Terraform:
 
 1. Clone este repositório:
    ```bash
